@@ -10,3 +10,5 @@
 
 세달의 시간동안 틈틈히 그려낸 조각들 역시,
 삶에서 내가 가장 먼저 찾아 주인이 된 그런 순간들이다.
+
+![finders-keeppers](https://github.com/mainside/finders-keepers/assets/161953380/fec0c895-5cb6-490d-b2ba-6b36cddf1a49)
