@@ -1,0 +1,8 @@
+{:full-name "mainside/finders-keepers"
+ :ns-name   "mainside.finders-keepers"
+ :sanitized "mainside/finders_keepers"
+ :name      "finders-keepers"
+ :modules   {:root         "modules"
+             :repositories [{:url  "https://github.com/kit-clj/modules.git"
+                             :tag  "master"
+                             :name "kit-modules"}]}}
