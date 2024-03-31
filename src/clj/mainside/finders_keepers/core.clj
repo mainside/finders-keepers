@@ -11,7 +11,8 @@
 
     ;; Routes
     [mainside.finders-keepers.web.routes.api]
-    )
+    
+    [mainside.finders-keepers.web.routes.pages])
   (:gen-class))
 
 ;; log uncaught exceptions in threads
