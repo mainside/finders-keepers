@@ -1,16 +1,37 @@
-# 🏄🏻‍♀️ finders-keepers
+# finders-keepers
 
-https://mainside.github.io/finders-keepers/
+Start a [REPL](#repls) in your editor or terminal of choice.
 
-'Finders Keepers'는 '찾는 사람이 임자' 라는 관용구이다.
+Start the server with:
 
-향긋한 커피와 늠름한 커피잔, 
-좋아하는 언어로 좋아하는 일을 하는 시간들,
-공을 차고 달리는 순간들,
-바다같은 세상에서 파도가 잠잠하기를 기다리기보다는
-중심을 잘 잡아나갈 수 있는 서퍼처럼 살아가고자 하는 삶의 태도.
+```clojure
+(go)
+```
 
-세달의 시간동안 틈틈히 그려낸 조각들 역시,
-삶에서 내가 가장 먼저 찾아 주인이 된 그런 순간들이다.
+The default API is available under http://localhost:3000/api
 
-![finders-keeppers](https://github.com/mainside/finders-keepers/assets/161953380/fec0c895-5cb6-490d-b2ba-6b36cddf1a49)
+System configuration is available under `resources/system.edn`.
+
+To reload changes:
+
+```clojure
+(reset)
+```
+
+## REPLs
+
+### Cursive
+
+Configure a [REPL following the Cursive documentation](https://cursive-ide.com/userguide/repl.html). Using the default "Run with IntelliJ project classpath" option will let you select an alias from the ["Clojure deps" aliases selection](https://cursive-ide.com/userguide/deps.html#refreshing-deps-dependencies).
+
+### CIDER
+
+Use the `cider` alias for CIDER nREPL support (run `clj -M:dev:cider`). See the [CIDER docs](https://docs.cider.mx/cider/basics/up_and_running.html) for more help.
+
+Note that this alias runs nREPL during development. To run nREPL in production (typically when the system starts), use the kit-nrepl library through the +nrepl profile as described in [the documentation](https://kit-clj.github.io/docs/profiles.html#profiles).
+
+### Command Line
+
+Run `clj -M:dev:nrepl` or `make repl`.
+
+Note that, just like with [CIDER](#cider), this alias runs nREPL during development. To run nREPL in production (typically when the system starts), use the kit-nrepl library through the +nrepl profile as described in [the documentation](https://kit-clj.github.io/docs/profiles.html#profiles).
