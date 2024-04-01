@@ -28,19 +28,6 @@
     100%   {background-position: calc(0*100%/3) calc(0*100%/3),calc(1*100%/3) calc(0*100%/3),calc(2*100%/3) calc(0*100%/3),calc(3*100%/3) calc(0*100%/3)}
   }
 
-  .shake-image {
-    animation: shake 0.5s infinite alternate;
-  }
-  
-  @keyframes shake {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-30px); /* Adjust the distance of shake as needed */
-    }
-  }
-
 /* body {
     margin: 0;
     padding: 0;
@@ -56,13 +43,58 @@
 }
 } */
 
-body {
+/* body {
     margin: 0;
     padding: 0;
     background-image: url('../img/bg.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Prevent scrolling */
-    height: 100vh; /* Ensure full height of viewport */
+    background-attachment: fixed;
+    height: 100vh;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents any potential scrollbar due to the video */
+}
+
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensures the video is behind other content */
+}
+
+.overlay-image {
+  position: fixed;
+  top: 10%;
+  right: 10px; /* Adjust as needed */
+  width: 50vw; /* 70% of screen width */
+  height: auto;
+  max-width: 50vw; /* Maximum width for the image */
+  z-index: 1;
+}
+
+.overlay-image img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30px); /* Adjust the distance of shake as needed */
+  }
 }
