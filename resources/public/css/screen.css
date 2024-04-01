@@ -92,7 +92,7 @@ body {
   width: 50vw;
   height: auto;
   max-width: 50vw;
-  z-index: 1;
+  z-index: 3;
 }
 
 .overlay-image img {
@@ -126,4 +126,37 @@ body {
   align-items: center;
   opacity: 1;
   transition: opacity 5s;
+}
+
+.description-bg {
+  position: fixed;
+  top: 50%;
+  /* Center vertically */
+  left: 0;
+  transform: translateY(-50%);
+  height: 70%;
+  /* 10% space above and below the screen */
+  width: 50%;
+  /* Adjust as needed */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Semi-transparent white */
+  z-index: 999;
+  /* Ensure it's above other elements */
+  overflow-y: auto;
+  /* Enable scrolling if content exceeds height */
+  padding: 20px;
+  /* Add padding to the text */
+  z-index: 2;
+}
+
+.text {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 16px;
+  line-height: 1.2;
+  /* Adjust line height */
+  margin: 10px 0;
+  /* Adjust margin between paragraphs */
 }

@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
- <head> 
-  <meta charset="UTF-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  <meta name="description" content="todo: describe app here" /> 
-  <title>Welcome to finders-keepers</title> 
-  <!-- styles --> 
-  <link href="/css/screen.css" rel="stylesheet" type="text/css" /> 
- </head> 
- <body> 
-  <!-- navbar --> 
-  <nav> 
-  </nav> 
-  <section> 
-   <div class="content"> 
-    <h2>Hello World!</h2> 
-   </div> 
-  </section> 
-  <div id="app"></div>
-  <script src="/js/app.js"></script>  
- </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="todo: describe app here" />
+  <title>Welcome to finders-keepers</title>
+  <!-- styles -->
+  <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="/images/img/bg.mov" type="video/mp4">
+    <!-- Add additional video sources for cross-browser compatibility -->
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="description-bg">
+    <h2>🏄🏻‍♀️ finders-keepers</h2>
+    <p class="text">'Finders Keepers'는 '찾는 사람이 임자' 라는 관용구이다.</p>
+    <p class="text"> 향긋한 커피와 늠름한 커피잔,</p>
+    <p class="text">좋아하는 언어로 좋아하는 일을 하는 시간들,</p>
+    <p class="text">공을 차고 달리는 순간들,</p>
+    <p class="text">바다같은 세상에서 파도가 잠잠하기를 기다리기보다는</p>
+    <p class="text">중심을 잘 잡아나갈 수 있는 서퍼처럼 살아가고자 하는 삶의 태도.</p>
+    <p class="text">세달의 시간동안 틈틈히 그려낸 조각들 역시,</p>
+    <p class="text">삶에서 내가 가장 먼저 찾아 주인이 된 그런 순간들이다.</p>
+  </div>
+
+  <div class="overlay-image">
+    <img src="/images/img/surf.png" alt="Overlay Image">
+  </div>
+
+  <div id="loading-screen">
+    <div class="loader"></div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById('loading-screen').style.opacity = '0';
+      setTimeout(function () {
+        document.getElementById('loading-screen').style.display = 'none';
+      }, 0);//2
+    }, 0);//3
+  </script>
+
+  <!-- <script src="/js/app.js"></script> -->
+</body>
+
 </html>
