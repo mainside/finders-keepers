@@ -73,7 +73,7 @@ body {
   overflow: hidden;
 }
 
-#bg-video {
+.bg-img {
   position: fixed;
   top: 50%;
   left: 50%;

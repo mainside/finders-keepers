@@ -16,11 +16,7 @@
 </head>
 
 <body>
-  <video autoplay muted loop id="bg-video">
-    <source src="/img/bg.mov" type="video/mp4">
-    <!-- Add additional video sources for cross-browser compatibility -->
-    Your browser does not support HTML5 video.
-  </video>
+  <img class="bg-img" src="https://mainside.github.io/finders-keepers/images/bg.gif">
 
   <div class="description-bg">
     <h2>🏄🏻‍♀️ finders-keepers</h2>
@@ -35,7 +31,7 @@
   </div>
 
   <div class="overlay-image">
-    <img src="/img/surf.png" alt="Overlay Image">
+    <img src="https://mainside.github.io/finders-keepers/images/surf.png" alt="Overlay Image">
   </div>
 
   <div id="loading-screen">
@@ -47,11 +43,10 @@
       document.getElementById('loading-screen').style.opacity = '0';
       setTimeout(function () {
         document.getElementById('loading-screen').style.display = 'none';
-      }, 0);//2
-    }, 0);//3
+      }, 2000);//2
+    }, 3000);//3
   </script>
 
-  <script src="/js/app.js"></script>
 </body>
 
 </html>
