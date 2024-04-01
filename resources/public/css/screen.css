@@ -27,3 +27,16 @@
     97%,
     100%   {background-position: calc(0*100%/3) calc(0*100%/3),calc(1*100%/3) calc(0*100%/3),calc(2*100%/3) calc(0*100%/3),calc(3*100%/3) calc(0*100%/3)}
   }
+
+  .shake-image {
+    animation: shake 0.5s infinite alternate;
+  }
+  
+  @keyframes shake {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-30px); /* Adjust the distance of shake as needed */
+    }
+  }
