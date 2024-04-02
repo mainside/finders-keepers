@@ -149,6 +149,13 @@ body {
   z-index: 2;
 }
 
+.text-group {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 13%;
+}
+
 .text {
   font-family: "Gowun Batang", serif;
   font-weight: 400;
@@ -159,4 +166,8 @@ body {
   /* Adjust line height */
   margin: 10px 0;
   /* Adjust margin between paragraphs */
+}
+
+.subject {
+  font-size: 20px;
 }
