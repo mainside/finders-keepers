@@ -136,7 +136,7 @@ body {
   transform: translateY(-50%);
   height: 70%;
   /* 10% space above and below the screen */
-  width: 50%;
+  width: 70%;
   /* Adjust as needed */
   background-color: rgba(255, 255, 255, 0.5);
   /* Semi-transparent white */
@@ -144,9 +144,16 @@ body {
   /* Ensure it's above other elements */
   overflow-y: auto;
   /* Enable scrolling if content exceeds height */
-  padding: 20px;
+  padding: 10px;
   /* Add padding to the text */
   z-index: 2;
+}
+
+.text-group {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 13%;
 }
 
 .text {
@@ -159,4 +166,8 @@ body {
   /* Adjust line height */
   margin: 10px 0;
   /* Adjust margin between paragraphs */
+}
+
+.subject {
+  font-size: 20px;
 }
